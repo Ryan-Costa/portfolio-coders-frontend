@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Sobre",
+            "imageUrl": "https://iili.io/dfYB5oQ.jpg",
+            "videoUrl": null,
+            "firstText": "Me chamo Ryan da Costa Souza, tenho 23 anos, sou de Fortaleza e atualmente trabalho como desenvolvedor front-end na TGOO Worldwide, atuando com HTML, CSS, Javascript, React, PHP e Laravel, além de criar layouts responsivos e otimizar para SEO.",
+            "secondText": "Tenho experiencia com ambientes colaborativos, tendo trabalhado anteriormente na 3 Corações Alimentos, Polibras Software e como Freelancer.",
+            "images": null 
+        },
+          {
+            "id": 2,
+            "name": "Hobbies",
+            "imageUrl": "https://iili.io/dKm00zl.jpg",
+            "videoUrl": "/video-hobby-2.mp4",
+            "firstText": "",
+            "secondText": "",
+            "images": null
+          },
+          {
+            "id": 3,
+            "name": "Motivações",
+            "imageUrl": "https://iili.io/dKm00zl.jpg",
+            "videoUrl": null,
+            "firstText": "",
+            "secondText": "",
+            "images": null
+          },
+          {
+            "id": 4,
+            "name": "Habilidades",
+            "imageUrl": "https://iili.io/dKm00zl.jpg",
+            "videoUrl": null,
+            "firstText": "",
+            "secondText": "",
+            "images": [
+              "https://iili.io/df64kSs.png",
+              "https://iili.io/dfYWeRe.png",
+              "https://iili.io/dfYWwU7.png",
+              "https://iili.io/dfYWkOu.png",
+              "https://iili.io/dfYWvDb.png"
+          ]
+          }
+    ]
+}

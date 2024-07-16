@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #e53939;
+    --color-primary-rgba: rgba(229, 57, 57, 0.3);
+    --color-text: #ffffff;
+    --color-background: #111111;
+    --color-bg-hero: #DDDFDE;
+  }
+
+* {
+    min-width: 0;
+}
+
+/* input {
+    color-scheme: dark;
+} */
+
+
