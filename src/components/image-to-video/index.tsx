@@ -27,7 +27,7 @@ const ImageToVideo = ({
                 : "animate-slide-in-from-right"
             }`
           : "opacity-0"
-      } object-cover w-full h-[40rem] min-w-[40rem] rounded-lg z-20 overflow-hidden`}
+      } object-cover w-full max-h-[24rem] sm:min-w-[47.75rem] md:min-w-[40rem] rounded-lg z-20 overflow-hidden`}
     >
       {videoUrl ? (
         hover ? (

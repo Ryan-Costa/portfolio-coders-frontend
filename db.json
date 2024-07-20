@@ -2,45 +2,68 @@
     "data": [
         {
             "id": 1,
-            "name": "Sobre",
+            "title": "Sobre",
+            "subtitle": null,
             "imageUrl": "https://iili.io/dfYB5oQ.jpg",
             "videoUrl": null,
-            "firstText": "Me chamo Ryan da Costa Souza, tenho 23 anos, sou de Fortaleza e atualmente trabalho como desenvolvedor front-end na TGOO Worldwide, atuando com HTML, CSS, Javascript, React, PHP e Laravel, além de criar layouts responsivos e otimizar para SEO.",
-            "secondText": "Tenho experiencia com ambientes colaborativos, tendo trabalhado anteriormente na 3 Corações Alimentos, Polibras Software e como Freelancer.",
+            "text": {
+              "primary": "Me chamo Ryan da Costa Souza, tenho 23 anos, sou de Fortaleza e atualmente trabalho como desenvolvedor front-end na TGOO Worldwide, atuando com HTML, CSS, Javascript, React, PHP e Laravel, além de criar layouts responsivos e otimizar para SEO.",
+              "secondary": "Tenho experiencia com ambientes colaborativos, tendo trabalhado anteriormente na 3 Corações Alimentos, Polibras Software e como Freelancer.",
+              "tertiary": null
+            },
             "images": null 
         },
           {
             "id": 2,
-            "name": "Hobbies",
+            "title": "Hobbies",
+            "subtitle": "Outros hobbies",
             "imageUrl": "https://iili.io/dKm00zl.jpg",
             "videoUrl": "/video-hobby-2.mp4",
-            "firstText": "",
-            "secondText": "",
-            "images": null
+            "text": {
+              "primary": "Desenvolver sempre foi uma arte para mim, tornei minha profissão meu melhor passa tempo, mas,  outra coisa pela qual sou apaixonado é a música eletrônica, não perco um festival, é o ambiente onde eu relaxo, fiz e faço boas amizades que levarei para minha vida, estar em contato com a natureza, encontrar com os amigos, conversar e dançar bastante, eu gosto de dizer que eu trabalho pra viver estes momentos.",
+              "secondary": null,
+              "tertiary": null
+            },
+            "secondText": "Outros hobbies",
+            "images": [
+              {
+                "url": "src/assets/beach.svg",
+                "description": "Ir a praia"
+              },
+              {
+                "url": "src/assets/drink.svg",
+                "description": "Sair a noite"
+              },
+              {
+                "url": "src/assets/game.svg",
+                "description": "Jogar"
+              },
+              {
+                "url": "src/assets/volleyball.svg",
+                "description": "Jogar volei"
+              }
+              
+
+
+             
+             
+              
+              
+              
+            ]
           },
           {
             "id": 3,
-            "name": "Motivações",
+            "title": "Motivações",
+            "subtitle": null,
             "imageUrl": "https://iili.io/dKm00zl.jpg",
             "videoUrl": null,
-            "firstText": "",
-            "secondText": "",
+            "text": {
+              "primary": "Desenvolver sempre foi uma arte para mim, tornei minha profissão meu melhor passa tempo, mas,  outra coisa pela qual sou apaixonado é a música eletrônica, não perco um festival, é o ambiente onde eu relaxo, fiz e faço boas amizades que levarei para minha vida, estar em contato com a natureza, encontrar com os amigos, conversar e dançar bastante, eu gosto de dizer que eu trabalho pra viver estes momentos.",
+              "secondary": null,
+              "tertiary": null
+            },
             "images": null
-          },
-          {
-            "id": 4,
-            "name": "Habilidades",
-            "imageUrl": "https://iili.io/dKm00zl.jpg",
-            "videoUrl": null,
-            "firstText": "",
-            "secondText": "",
-            "images": [
-              "https://iili.io/df64kSs.png",
-              "https://iili.io/dfYWeRe.png",
-              "https://iili.io/dfYWwU7.png",
-              "https://iili.io/dfYWkOu.png",
-              "https://iili.io/dfYWvDb.png"
-          ]
           }
     ]
 }

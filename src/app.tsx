@@ -3,12 +3,23 @@ import { Hero } from "./components/hero";
 import Section from "./components/section";
 
 interface DataProps {
-  name: string;
-  firstText: string;
+  id: string;
+  title: string;
+  subtitle: string | null;
+  text: {
+    primary: string | null;
+    secondary: string | null;
+    tertiary: string | null;
+  };
   secondText: string;
   imageUrl: string;
   videoUrl: string | undefined;
-  images: string[];
+  images:
+    | {
+        url: string;
+        description: string | null;
+      }[]
+    | null;
 }
 [];
 function App() {
@@ -28,12 +39,12 @@ function App() {
       <Hero />
       {data.map((data: DataProps, index: number) => (
         <Section
-          key={data.name}
-          name={data.name}
+          key={data.id}
+          title={data.title}
+          subtitle={data.subtitle}
           imageUrl={data.imageUrl}
           videoUrl={data.videoUrl}
-          firstText={data.firstText}
-          secondText={data.secondText}
+          text={data.text}
           images={data.images}
           invert={index % 2 !== 0}
           originalAnimation={index % 2 !== 0}

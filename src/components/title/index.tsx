@@ -6,7 +6,7 @@ export const Title = () => {
 
   useEffect(() => {
     const typed = new Typed(".auto-type", {
-      strings: ["Ryan Costa", "Front-end Developer", "Software Engineer"],
+      strings: ["Ryan Costa", "a Front-end Developer", "a Software Engineer"],
       typeSpeed: 100,
       backSpeed: 50,
       loop: true,
@@ -18,13 +18,13 @@ export const Title = () => {
   }, []);
 
   return (
-    <div className="w-[42.5rem]">
+    <div className="w-[23rem] pl-1 absolute top-40 flex items-center justify-start">
       <div>
-        <h1 className="text-5xl text-black font-bold xl:text-6xl">
+        <h1 className="text-3xl text-black font-bold xl:text-6xl">
           Hi, I&apos;m
           <br />
-          <span ref={ref} className="auto-type text-primary">
-            Ryan Costa
+          <span ref={ref} className="text-[2rem] auto-type text-primary">
+            a Front-end Developer
           </span>
         </h1>
       </div>
