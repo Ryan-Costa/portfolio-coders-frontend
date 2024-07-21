@@ -21,16 +21,16 @@ const ImageToVideo = ({
       onMouseLeave={() => setHover(false)}
       className={`${
         hasBeenVisible
-          ? `${
+          ? `lg:${
               originalAnimation
                 ? "animate-slide-in-from-left"
                 : "animate-slide-in-from-right"
             }`
           : "opacity-0"
-      } object-cover w-full max-h-[24rem] sm:min-w-[47.75rem] md:min-w-[40rem] rounded-lg z-20 overflow-hidden`}
+      } object-cover w-full h-full max-h-[20.5rem] max-w-[23rem] sm:min-w-[47.75rem] md:min-w-[40rem] rounded-lg z-20 overflow-hidden`}
     >
       {videoUrl ? (
-        hover ? (
+        hover || hasBeenVisible ? (
           <video
             autoPlay
             loop

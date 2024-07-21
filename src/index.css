@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --color-primary: #e53939;
+    --red-c1: #e53939;
+    --red-c2: #B82828;
     --color-primary-rgba: rgba(229, 57, 57, 0.3);
     --color-text: #ffffff;
     --tx-hobby: rgba(229, 17, 17, 0.40);
@@ -11,12 +12,30 @@
     --color-bg-hero: #DDDFDE;
   }
 
-* {
-    min-width: 0;
-}
-
 /* input {
     color-scheme: dark;
 } */
+
+@keyframes scroll {
+    100% {
+      transform: translateX(calc(-50% - 20px));
+    }
+  }
+  
+  .scroll {
+    mask:  linear-gradient(to right, transparent, white 25%, white 75%, transparent)
+  }
+  .carousel-container {
+    animation: scroll 10s linear infinite;
+    animation-play-state: running;
+  }
+
+  .carousel-container:hover {
+    animation-play-state: paused;
+  }
+  
+  .carousel-item {
+    flex-shrink: 0;
+  }
 
 

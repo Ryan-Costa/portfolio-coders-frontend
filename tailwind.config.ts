@@ -7,7 +7,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--color-primary)",
+        "red-c1": "var(--red-c1)",
+        "red-c2": "var(--red-c2)",
         "primary-rgba": "var(--color-primary-rgba)",
         text: "var(--color-text)",
         "tx-hobby": "var(--tx-hobby)",
@@ -16,6 +17,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: "Inter",
+      },
+      width: {
+        content: "max-content",
       },
       boxShadow: {
         soft: "0px 0px 2px 0px rgba(229, 57, 57, 0.80) inset",

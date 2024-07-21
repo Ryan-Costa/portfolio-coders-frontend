@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Hero } from "./components/hero";
 import Section from "./components/section";
+import { Social } from "./components/social";
+import { Skills } from "./components/skills";
 
 interface DataProps {
-  id: string;
+  id: number;
   title: string;
   subtitle: string | null;
   text: {
@@ -37,6 +39,7 @@ function App() {
   return (
     <>
       <Hero />
+      <Social />
       {data.map((data: DataProps, index: number) => (
         <Section
           key={data.id}
@@ -50,6 +53,7 @@ function App() {
           originalAnimation={index % 2 !== 0}
         />
       ))}
+      <Skills />
     </>
   );
 }
