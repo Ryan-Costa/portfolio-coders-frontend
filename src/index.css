@@ -16,11 +16,11 @@
     color-scheme: dark;
 } */
 
-@keyframes scroll {
+/* @keyframes scroll {
     100% {
       transform: translateX(calc(-50% - 20px));
     }
-  }
+  } */
   
   .scroll {
     mask:  linear-gradient(to right, transparent, white 25%, white 75%, transparent)

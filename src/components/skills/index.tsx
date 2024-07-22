@@ -21,15 +21,19 @@ export function Skills() {
   }, []);
 
   const getDuplicatedSkills = (skills: SkillProps[]) => {
-    return [...skills, ...skills];
+    return [...skills, ...skills, ...skills, ...skills];
   };
   return (
-    <section className="max-w-full w-full h-[60vh] flex flex-col items-center justify-between overflow-hidden">
-      <h2 className={`text-4xl lg:5xl font-bold`}>Habilidades</h2>
+    <section className="my-12 max-w-full w-full h-[40vh] flex flex-col items-center justify-between overflow-hidden">
+      <h2
+        className={`text-title-sm lg:text-title-lg xl:text-title-xl font-semibold`}
+      >
+        Habilidades
+      </h2>
 
       <div className="max-w-full h-full flex items-center">
         <div className="scroll max-w-full py-10 ">
-          <div className="carousel-container translate-x-0 w-content flex gap-10">
+          <div className="animate-scroll animate-running hover:animate-paused translate-x-0 w-content flex gap-10">
             {getDuplicatedSkills(skills).map((skill: SkillProps) => (
               <a
                 href={skill.link}
@@ -40,7 +44,7 @@ export function Skills() {
                 <img
                   src={skill.url}
                   alt={skill.description}
-                  className="!w-24 !h-24 whitespace-nowrap carousel-item"
+                  className="whitespace-nowrap carousel-item"
                 />
               </a>
             ))}

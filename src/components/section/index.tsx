@@ -46,39 +46,58 @@ export const Section = ({
   return (
     <section
       ref={ref}
-      className={`px-[1rem] sm:px-[8rem] w-full flex items-center justify-center bg-center bg-no-repeat ${
+      className={`my-12 px-[1rem] xs:px-[1.25rem] sm:px-[1.5rem] md:px-[1.75rem] lg:px-[2rem] w-full flex items-center justify-center bg-center bg-no-repeat ${
         invert ? "bg-pattern" : "bg-gradient-radial"
       }`}
     >
       <div
-        className={`flex gap-4 flex-col ${
+        className={`xl:max-w-[1440px] flex gap-4 xl:gap-8 flex-col ${
           invert ? "xl:flex-row-reverse" : "xl:flex-row"
         }`}
       >
         <div
-          className={`lg:${
-            hasBeenVisible ? "animate-slide-in-from-left" : "opacity-0"
-          } flex flex-col items-start justify-start min-w-full w-full gap-5`}
+          className={`${
+            hasBeenVisible ? "xl:animate-slide-in-from-left" : "xl:opacity-0"
+          } flex flex-col items-start justify-between w-full  gap-4`}
         >
           <div
-            className={`flex flex-col items-center justify-start w-full gap-5 lg:gap-9 xl:gap-12`}
+            className={`flex flex-col items-center xl:items-start justify-start w-full gap-4`}
           >
-            <h2 className={`text-4xl lg:5xl font-bold`}>{title}</h2>
+            <h2
+              className={`text-title-sm md:text-title-md lg:text-title-lg xl:text-title-xl font-semibold`}
+            >
+              {title}
+            </h2>
 
             {text.primary && (
-              <p className={`text-xl lg:2xl font-normal`}>{text.primary}</p>
+              <p
+                className={`text-normal-sm md:text-normal-md lg:text-normal-lg xl:text-normal-xl font-normal`}
+              >
+                {text.primary}
+              </p>
             )}
             {text.secondary && (
-              <p className={`text-xl lg:2xl font-normal`}>{text.secondary}</p>
+              <p
+                className={`text-normal-sm md:text-normal-md lg:text-normal-lg xl:text-normal-xl font-normal`}
+              >
+                {text.secondary}
+              </p>
             )}
             {text.tertiary && (
-              <p className={`text-xl lg:2xl font-normal`}>{text.tertiary}</p>
-            )}
-
-            {subtitle && (
-              <p className={`text-2xl lg:text-3xl font-bold`}>{subtitle}</p>
+              <p
+                className={`text-normal-sm md:text-normal-md lg:text-normal-lg xl:text-normal-xl font-normal`}
+              >
+                {text.tertiary}
+              </p>
             )}
           </div>
+          {subtitle && (
+            <p
+              className={`text-subtitle-sm md:text-subtitle-md lg:text-subtitle-lg xl:text-subtitle-xl font-semibold`}
+            >
+              {subtitle}
+            </p>
+          )}
 
           {images && (
             <div className="w-full flex flex-col gap-8 z-0 ">
@@ -86,7 +105,7 @@ export const Section = ({
                 {images.map((image, index) => (
                   <div
                     key={index}
-                    className={`w-full h-[105px] flex flex-col items-center justify-center gap-3 bg-hobby 
+                    className={`aspect-[9/12] flex flex-col items-center justify-center gap-3 bg-hobby 
                       shadow-shape backdrop-blur-[20px] rounded-lg lg:${
                         hasBeenVisible
                           ? "animate-slide-in-from-left"
@@ -94,14 +113,14 @@ export const Section = ({
                       }`}
                   >
                     <img
-                      className="w-12 h-12"
+                      className="w-12 h-12 xs:w-14 xs:h-14 sm:w-16 sm:h-16 md:w-20 md:h-20"
                       src={image.url}
                       alt={image.description || `Hobby ${index + 1}`}
                       style={{
                         animationDelay: `${Math.min(100 * index, 350)}ms`,
                       }}
                     />
-                    <span className="text-xs font-bold text-tx-hobby">
+                    <span className="text-clamp font-bold text-tx-hobby">
                       {image.description}
                     </span>
                   </div>

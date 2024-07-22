@@ -15,28 +15,30 @@ const ImageToVideo = ({
 }: ImageToVideoProps) => {
   const [hover, setHover] = useState(false);
 
+  const cursorMobileDetector = window.matchMedia("(pointer: coarse)").matches;
+
   return (
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`${
         hasBeenVisible
-          ? `lg:${
+          ? `${
               originalAnimation
-                ? "animate-slide-in-from-left"
-                : "animate-slide-in-from-right"
+                ? "xl:animate-slide-in-from-left"
+                : "xl:animate-slide-in-from-right"
             }`
           : "opacity-0"
-      } object-cover w-full h-full max-h-[20.5rem] max-w-[23rem] sm:min-w-[47.75rem] md:min-w-[40rem] rounded-lg z-20 overflow-hidden`}
+      } w-full h-full rounded-lg z-20 overflow-hidden`}
     >
       {videoUrl ? (
-        hover || hasBeenVisible ? (
+        hover || cursorMobileDetector ? (
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full aspect-video xl:aspect-auto max-h-[560px] object-cover"
           >
             <source src={videoUrl} type="video/mp4" />
             Your browser does not support the video tag.
@@ -45,14 +47,14 @@ const ImageToVideo = ({
           <img
             src={imageUrl}
             alt="Thumbnail"
-            className="w-full h-full object-cover"
+            className="w-full h-full aspect-video xl:aspect-auto xl:max-h-[560px] object-cover"
           />
         )
       ) : (
         <img
           src={imageUrl}
           alt="Thumbnail"
-          className="w-full h-full object-cover"
+          className="w-full h-full aspect-video xl:aspect-auto 2xl:max-h-[560px] object-cover"
         />
       )}
     </div>

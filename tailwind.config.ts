@@ -6,6 +6,11 @@ const config: Config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xxs: "480px",
+        xs: "524px",
+        mdx: "920px",
+      },
       colors: {
         "red-c1": "var(--red-c1)",
         "red-c2": "var(--red-c2)",
@@ -15,11 +20,27 @@ const config: Config = {
         background: "var(--color-background)",
         "bg-hero": "var(--color-bg-hero)",
       },
+      fontSize: {
+        "title-sm": "2.25rem",
+        "title-md": "2.5rem",
+        "title-lg": "2.75rem",
+        "subtitle-md": "1.5rem",
+        "subtitle-lg": "1.75rem",
+        "normal-sm": "1rem",
+        "normal-md": "1.125rem",
+        "normal-lg": "1.25rem",
+        clamp: "clamp(12px, 3vw, 18px)",
+        clamp2: "clamp(34px, 5vw, 74px)",
+      },
       fontFamily: {
         sans: "Inter",
       },
       width: {
         content: "max-content",
+        clamp: "clamp(48px, 5vw, 80px)",
+      },
+      height: {
+        clamp: "clamp(48px, 5vh, 80px)",
       },
       boxShadow: {
         soft: "0px 0px 2px 0px rgba(229, 57, 57, 0.80) inset",
@@ -65,12 +86,24 @@ const config: Config = {
             opacity: "1",
           },
         },
+        scroll: {
+          "100%": {
+            transform: "translateX(calc(-50% - 20px))",
+          },
+        },
       },
       animation: {
         "fade-in": "fadeIn 1s ease-out",
         "slide-in-from-left": "slideInFromLeft 2s forwards",
         "slide-in-from-right": "slideInFromRight 2s forwards",
+        scroll: "scroll 10s linear infinite",
+        paused: "animation-play-state: paused",
+        running: "animation-play-state: running",
       },
+      // animationPlayState: {
+      //   paused: "paused",
+      //   running: "running",
+      // },
     },
   },
   plugins: [require("tailwindcss-animation-delay")],
