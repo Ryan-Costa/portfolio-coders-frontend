@@ -42,6 +42,7 @@ export function Skills() {
                 href={skill.link}
                 target="_blank"
                 title={skill.description}
+                className="hover:scale-125 transition-transform duration-300"
               >
                 <img
                   src={skill.url}

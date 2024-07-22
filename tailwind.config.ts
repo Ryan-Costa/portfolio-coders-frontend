@@ -30,10 +30,10 @@ const config: Config = {
         "normal-md": "1.125rem",
         "normal-lg": "1.25rem",
         clamp: "clamp(12px, 3vw, 18px)",
-        clamp2: "clamp(34px, 5vw, 74px)",
+        clamp2: "clamp(34px, 6vw, 74px)",
       },
       fontFamily: {
-        sans: "Inter",
+        sans: ['"Source Sans 3"', "sans-serif"],
       },
       width: {
         content: "max-content",
