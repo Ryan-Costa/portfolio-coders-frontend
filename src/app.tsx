@@ -29,7 +29,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch("http://localhost:3001/data")
+      fetch(`${import.meta.env.VITE_BASE_URL}/data`)
         .then((response) => response.json())
         .then((data) => setData(data))
         .catch((error) => console.error("Error:", error));

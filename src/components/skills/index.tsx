@@ -12,13 +12,15 @@ export function Skills() {
 
   useEffect(() => {
     const fetchSkills = () => {
-      fetch("http://localhost:3001/skills")
+      fetch(`${import.meta.env.VITE_BASE_URL}/skills`)
         .then((response) => response.json())
         .then((skills) => setSkills(skills))
         .catch((error) => console.error("Error:", error));
     };
     fetchSkills();
   }, []);
+
+  console.log(import.meta.env.VITE_BASE_URL);
 
   const getDuplicatedSkills = (skills: SkillProps[]) => {
     return [...skills, ...skills, ...skills, ...skills];
@@ -34,10 +36,10 @@ export function Skills() {
       <div className="max-w-full h-full flex items-center">
         <div className="scroll max-w-full py-10 ">
           <div className="carousel-container animate-scroll translate-x-0 w-content flex gap-10">
-            {getDuplicatedSkills(skills).map((skill: SkillProps) => (
+            {getDuplicatedSkills(skills).map((skill: SkillProps, index) => (
               <a
+                key={index}
                 href={skill.link}
-                key={skill.id}
                 target="_blank"
                 title={skill.description}
               >
