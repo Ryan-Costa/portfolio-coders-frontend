@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Sobre",
             "subtitle": null,
-            "imageUrl": "/image-about.jpg",
+            "imageUrl": "/hobbies/image-about.jpg",
             "videoUrl": null,
             "text": {
               "primary": "Me chamo Ryan da Costa Souza, tenho 23 anos, sou de Fortaleza e atualmente trabalho como desenvolvedor front-end na TGOO Worldwide, atuando com HTML, CSS, Javascript, React, PHP e Laravel, além de criar layouts responsivos e otimizar para SEO.",
@@ -17,8 +17,8 @@
             "id": 2,
             "title": "Hobbies",
             "subtitle": "Outros hobbies",
-            "imageUrl": "/image-hobbies.jpg",
-            "videoUrl": "/video-hobby-2.mp4",
+            "imageUrl": "/hobbies/image-hobbies.jpg",
+            "videoUrl": "/hobbies/video-hobby-2.mp4",
             "text": {
               "primary": "Desenvolver sempre foi uma arte para mim, tornei minha profissão meu melhor passa tempo, mas,  outra coisa pela qual sou apaixonado é a música eletrônica, não perco um festival, é o ambiente onde eu relaxo, fiz e faço boas amizades que levarei para minha vida, estar em contato com a natureza, encontrar com os amigos, conversar e dançar bastante, eu gosto de dizer que eu trabalho pra viver estes momentos.",
               "secondary": null,
@@ -27,19 +27,19 @@
             "secondText": "Outros hobbies",
             "images": [
               {
-                "url": "/src/assets/beach.svg",
+                "url": "/hobbies/beach.svg",
                 "description": "Ir a praia"
               },
               {
-                "url": "/src/assets/drink.svg",
+                "url": "/hobbies/drink.svg",
                 "description": "Sair a noite"
               },
               {
-                "url": "/src/assets/game.svg",
+                "url": "/hobbies/game.svg",
                 "description": "Jogar"
               },
               {
-                "url": "/src/assets/volleyball.svg",
+                "url": "/hobbies/volleyball.svg",
                 "description": "Jogar volei"
               } 
             ]
@@ -48,7 +48,7 @@
             "id": 3,
             "title": "Motivações",
             "subtitle": null,
-            "imageUrl": "/image-motivations.jpg",
+            "imageUrl": "/hobbies/image-motivations.jpg",
             "videoUrl": null,
             "text": {
               "primary": "Programar e desenvolver soluções é minha paixão e faz parte do meu dia a dia. Possuo 3 anos de experiência, mas sempre busco novas oportunidades de aprendizado e evolução. Por isso, desejo participar do projeto Front-end Coders, tanto para aprender com o projeto e colegas de profissão, quanto para repassar meus conhecimentos e experiências.",
@@ -61,79 +61,79 @@
     "skills": [
       {
         "id": 1,
-        "url": "/src/assets/tech/html.svg",
+        "url": "/tech/html.svg",
         "description": "HTML",
         "link": "https://html.spec.whatwg.org/"
       },
       {
         "id": 2,
-        "url": "/src/assets/tech/css.svg",
+        "url": "/tech/css.svg",
         "description": "CSS",
         "link": "https://www.w3.org/Style/CSS/"
       },
       {
         "id": 3,
-        "url": "/src/assets/tech/tailwindcss.svg",
+        "url": "/tech/tailwindcss.svg",
         "description": "Tailwind CSS",
         "link": "https://tailwindcss.com/"
       },
       {
         "id": 4,
-        "url": "/src/assets/tech/sass.svg",
+        "url": "/tech/sass.svg",
         "description": "Sass",
         "link": "https://sass-lang.com/"
       },
       {
         "id": 5,
-        "url": "/src/assets/tech/reactjs.svg",
+        "url": "/tech/reactjs.svg",
         "description": "ReactJS",
         "link": "https://reactjs.org/"
       },
       {
         "id": 6,
-        "url": "/src/assets/tech/nextjs.svg",
+        "url": "/tech/nextjs.svg",
         "description": "Next.js",
         "link": "https://nextjs.org/"
       },
       {
         "id": 7,
-        "url": "/src/assets/tech/react-native.svg",
+        "url": "/tech/react-native.svg",
         "description": "React Native",
         "link": "https://reactnative.dev/"
       },
       {
         "id": 8,
-        "url": "/src/assets/tech/javascript.svg",
+        "url": "/tech/javascript.svg",
         "description": "JavaScript",
         "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       },
       {
         "id": 9,
-        "url": "/src/assets/tech/typescript.svg",
+        "url": "/tech/typescript.svg",
         "description": "TypeScript",
         "link": "https://www.typescriptlang.org/"
       },
       {
         "id": 10,
-        "url": "/src/assets/tech/nodejs.svg",
+        "url": "/tech/nodejs.svg",
         "description": "Node.js",
         "link": "https://nodejs.org/"
       },
       {
         "id": 11,
-        "url": "/src/assets/tech/redux.svg",
+        "url": "/tech/redux.svg",
         "description": "Redux",
         "link": "https://redux.js.org/"
       },
       {
         "id": 12,
-        "url": "/src/assets/tech/php.svg",
+        "url": "/tech/php.svg",
         "description": "PHP",
         "link": "https://www.php.net/"
       },
       {
         "id": 13,
-        "url": "/src/assets/tech/laravel.svg",
+        "url": "/tech/laravel.svg",
         "description": "Laravel",
         "link": "https://laravel.com/"
       }
