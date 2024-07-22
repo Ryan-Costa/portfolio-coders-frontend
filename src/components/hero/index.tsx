@@ -7,18 +7,18 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 export const Hero = () => {
   const ref = useRef(null);
 
-  // useEffect(() => {
-  //   const typed = new Typed(".auto-type", {
-  //     strings: ["Ryan Costa", "a Front-end Developer", "a Software Engineer"],
-  //     typeSpeed: 100,
-  //     backSpeed: 50,
-  //     loop: true,
-  //   });
+  useEffect(() => {
+    const typed = new Typed(".auto-type", {
+      strings: ["Ryan Costa", "a Front-end Developer", "a Software Engineer"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+    });
 
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <>
