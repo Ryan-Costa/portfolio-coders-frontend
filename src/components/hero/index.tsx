@@ -75,7 +75,7 @@ export const Hero = () => {
           <img
             src="https://iili.io/dKmV8U7.png"
             alt="Hero Ryan"
-            className="w-full xs:w-[500px] sm:w-[500px] 2xl:w-[800px] -mb-[2rem] xl:-mb-[6rem] aspect-[3/4]"
+            className="w-full xs:w-[500px] sm:w-[500px] 2xl:w-[600px] -mb-[2rem] xl:-mb-[6rem] aspect-[3/4]"
           />
         </div>
       </div>

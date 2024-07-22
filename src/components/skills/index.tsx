@@ -33,7 +33,7 @@ export function Skills() {
 
       <div className="max-w-full h-full flex items-center">
         <div className="scroll max-w-full py-10 ">
-          <div className="animate-scroll animate-running hover:animate-paused translate-x-0 w-content flex gap-10">
+          <div className="carousel-container animate-scroll translate-x-0 w-content flex gap-10">
             {getDuplicatedSkills(skills).map((skill: SkillProps) => (
               <a
                 href={skill.link}
