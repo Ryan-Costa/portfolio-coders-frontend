@@ -28,12 +28,12 @@ export const Hero = () => {
     <>
       <div className="relative w-full h-[100vh] xl:h-[85vh] flex flex-col xl:flex-row items-center bg-bg-hero justify-end xl:justify-between overflow-hidden">
         <div
-          className="absolute xl:static xl:opacity-0 xl:animate-slide-in-from-left
+          className="box-text absolute xl:static xl:opacity-0 xl:animate-slide-in-from-left
           flex items-center justify-start xl:flex-col xl:items-start xl:justify-between
           top-[6rem] sm:top-[5rem] md:top-[3rem]
           md:text-6xl xl:text-clamp4
           xl:bg-red-800 w-[20rem] md:w-[26rem] mdx:w-[45vw] xl:h-full 
-          pl-[1rem] xl:pl-[8rem] xl:pt-[20rem] xl:pb-[4rem] 
+          pl-[1rem] xl:pl-[8rem] xl:pt-[20rem] xl:pb-[4rem]
       "
         >
           <a
@@ -96,7 +96,7 @@ export const Hero = () => {
           <img
             src="/image-hero.webp"
             alt="Hero Ryan"
-            className="min-w-[480px] w-full max-w-[700px] xs:max-w-[530px] xl:max-w-[600px] -mb-[2rem] xl:-mb-[6rem] aspect-[3/4]"
+            className="image-hero min-w-[480px] w-full max-w-[700px] xs:max-w-[530px] xl:max-w-[600px] -mb-[2rem] xl:-mb-[6rem] aspect-[3/4]"
           />
         </div>
       </div>
