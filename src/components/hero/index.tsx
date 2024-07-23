@@ -94,7 +94,7 @@ export const Hero = () => {
 
         <div className="opacity-0 animate-slide-in-from-up absolute bottom-0 right-0 xl:w-[55vw] w-full flex justify-center items-end xl:items-center">
           <img
-            src="https://iili.io/doGg4pV.webp"
+            src="/image-hero.webp"
             alt="Hero Ryan"
             className="min-w-[480px] w-full max-w-[700px] xs:max-w-[530px] xl:max-w-[600px] -mb-[2rem] xl:-mb-[6rem] aspect-[3/4]"
           />

@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Sobre",
             "subtitle": null,
-            "imageUrl": "https://iili.io/doGZsZx.webp",
+            "imageUrl": "/image-about.jpg",
             "videoUrl": null,
             "text": {
               "primary": "Me chamo Ryan da Costa Souza, tenho 23 anos, sou de Fortaleza e atualmente trabalho como desenvolvedor front-end na TGOO Worldwide, atuando com HTML, CSS, Javascript, React, PHP e Laravel, além de criar layouts responsivos e otimizar para SEO.",
@@ -17,7 +17,7 @@
             "id": 2,
             "title": "Hobbies",
             "subtitle": "Outros hobbies",
-            "imageUrl": "https://iili.io/doGZb3P.webp",
+            "imageUrl": "/image-hobbies.jpg",
             "videoUrl": "/video-hobby-2.mp4",
             "text": {
               "primary": "Desenvolver sempre foi uma arte para mim, tornei minha profissão meu melhor passa tempo, mas,  outra coisa pela qual sou apaixonado é a música eletrônica, não perco um festival, é o ambiente onde eu relaxo, fiz e faço boas amizades que levarei para minha vida, estar em contato com a natureza, encontrar com os amigos, conversar e dançar bastante, eu gosto de dizer que eu trabalho pra viver estes momentos.",
@@ -48,7 +48,7 @@
             "id": 3,
             "title": "Motivações",
             "subtitle": null,
-            "imageUrl": "https://iili.io/doGZma1.webp",
+            "imageUrl": "/image-motivations.jpg",
             "videoUrl": null,
             "text": {
               "primary": "Programar e desenvolver soluções é minha paixão e faz parte do meu dia a dia. Possuo 3 anos de experiência, mas sempre busco novas oportunidades de aprendizado e evolução. Por isso, desejo participar do projeto Front-end Coders, tanto para aprender com o projeto e colegas de profissão, quanto para repassar meus conhecimentos e experiências.",
