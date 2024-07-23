@@ -20,8 +20,6 @@ export function Skills() {
     fetchSkills();
   }, []);
 
-  console.log(import.meta.env.VITE_BASE_URL);
-
   const getDuplicatedSkills = (skills: SkillProps[]) => {
     return [...skills, ...skills, ...skills, ...skills];
   };
