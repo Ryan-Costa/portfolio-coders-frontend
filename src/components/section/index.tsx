@@ -64,7 +64,7 @@ export const Section = ({
             className={`flex flex-col items-center xl:items-start justify-start w-full gap-4`}
           >
             <h2
-              className={`text-title-sm md:text-title-md lg:text-title-lg xl:text-title-xl font-semibold`}
+              className={`text-title-sm md:text-title-md lg:text-title-lg xl:text-title-xl font-bold`}
             >
               {title}
             </h2>
@@ -93,7 +93,7 @@ export const Section = ({
           </div>
           {subtitle && (
             <p
-              className={`text-subtitle-sm md:text-subtitle-md lg:text-subtitle-lg xl:text-subtitle-xl font-semibold`}
+              className={`text-subtitle-sm md:text-subtitle-md lg:text-subtitle-lg xl:text-subtitle-xl font-bold`}
             >
               {subtitle}
             </p>

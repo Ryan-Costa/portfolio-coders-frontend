@@ -1,4 +1,6 @@
 import { useState } from "react";
+import VolumeOffIcon from "@mui/icons-material/VolumeOff";
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 
 interface ImageToVideoProps {
   imageUrl: string;
@@ -14,6 +16,7 @@ const ImageToVideo = ({
   originalAnimation,
 }: ImageToVideoProps) => {
   const [hover, setHover] = useState(false);
+  const [muted, setMuted] = useState(false);
 
   const cursorMobileDetector = window.matchMedia("(pointer: coarse)").matches;
 
@@ -29,20 +32,29 @@ const ImageToVideo = ({
                 : "xl:animate-slide-in-from-right"
             }`
           : "opacity-0"
-      } w-full h-full rounded-lg z-20 overflow-hidden`}
+      } w-full h-full rounded-lg z-20 overflow-hidden relative`}
     >
       {videoUrl ? (
         hover || cursorMobileDetector ? (
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full aspect-video xl:aspect-auto max-h-[560px] object-cover"
-          >
-            <source src={videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <>
+            <video
+              autoPlay
+              loop
+              muted={!muted}
+              playsInline
+              className="w-full h-full aspect-video xl:aspect-auto max-h-[560px] object-cover"
+            >
+              <source src={videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              onClick={() => setMuted((prev) => !prev)}
+              className="absolute top-2 right-2"
+              title={muted ? "Silenciar silenciar" : "Ativar música"}
+            >
+              {muted ? <VolumeOffIcon /> : <VolumeUpIcon />}
+            </button>
+          </>
         ) : (
           <img
             src={imageUrl}

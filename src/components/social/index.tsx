@@ -19,7 +19,7 @@ export function Social() {
             title="Acessar GitHub de Ryan Costa"
           >
             <GitHubIcon
-              sx={{ fontSize: "3.6rem" }}
+              sx={{ fontSize: "3rem" }}
               className="hover:fill-red-c2"
             />
           </a>
@@ -29,7 +29,7 @@ export function Social() {
             title="Entrar em contato com Ryan Costa"
           >
             <WhatsAppIcon
-              sx={{ fontSize: "3.6rem" }}
+              sx={{ fontSize: "3rem" }}
               className="hover:fill-red-c2"
             />
           </a>
@@ -39,7 +39,7 @@ export function Social() {
             title="Acessar Linkedin de Ryan Costa"
           >
             <LinkedInIcon
-              sx={{ fontSize: "3.6rem" }}
+              sx={{ fontSize: "3rem" }}
               className="hover:fill-red-c2"
             />
           </a>

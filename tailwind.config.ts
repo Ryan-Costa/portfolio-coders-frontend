@@ -30,14 +30,14 @@ const config: Config = {
         "normal-md": "1.125rem",
         "normal-lg": "1.25rem",
         clamp: "clamp(12px, 3vw, 18px)",
-        clamp2: "clamp(34px, 6vw, 74px)",
+        clamp2: "clamp(52px, 6vw, 96px)",
+        clamp3: "clamp(64px, 5vw, 102px)",
       },
       fontFamily: {
         sans: ['"Source Sans 3"', "sans-serif"],
       },
       width: {
         content: "max-content",
-        clamp: "clamp(48px, 5vw, 80px)",
       },
       height: {
         clamp: "clamp(48px, 5vh, 80px)",
@@ -86,6 +86,14 @@ const config: Config = {
             opacity: "1",
           },
         },
+        slideInFromUp: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
         scroll: {
           "100%": {
             transform: "translateX(calc(-50% - 20px))",
@@ -96,14 +104,9 @@ const config: Config = {
         "fade-in": "fadeIn 1s ease-out",
         "slide-in-from-left": "slideInFromLeft 2s forwards",
         "slide-in-from-right": "slideInFromRight 2s forwards",
-        scroll: "scroll 10s linear infinite",
-        paused: "animation-play-state: paused",
-        running: "animation-play-state: running",
+        "slide-in-from-up": "slideInFromUp 2s forwards",
+        scroll: "scroll 20s linear infinite",
       },
-      // animationPlayState: {
-      //   paused: "paused",
-      //   running: "running",
-      // },
     },
   },
   plugins: [require("tailwindcss-animation-delay")],
