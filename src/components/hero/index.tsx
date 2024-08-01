@@ -48,9 +48,7 @@ export const Hero = () => {
             <span
               ref={ref}
               className="text-clamp2 auto-type text-red-c2 xl:text-white/60"
-            >
-              a Front-end Developer
-            </span>
+            ></span>
           </h1>
 
           <div

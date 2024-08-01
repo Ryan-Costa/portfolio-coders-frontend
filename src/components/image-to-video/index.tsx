@@ -52,7 +52,19 @@ const ImageToVideo = ({
               className="absolute top-2 right-2"
               title={muted ? "Silenciar silenciar" : "Ativar música"}
             >
-              {muted ? <VolumeOffIcon /> : <VolumeUpIcon />}
+              {muted ? (
+                <div className="flex gap-2 p-2 bg-black">
+                  <span>Desativar música</span>
+                  <VolumeOffIcon />
+                </div>
+              ) : (
+                <div>
+                  <div className="flex gap-2 p-2 bg-black">
+                    <span>Ativar música</span>
+                    <VolumeUpIcon />
+                  </div>
+                </div>
+              )}
             </button>
           </>
         ) : (
