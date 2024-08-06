@@ -33,16 +33,16 @@ export const Hero = () => {
           top-[6rem] sm:top-[5rem] md:top-[3rem]
           md:text-6xl xl:text-clamp4
           xl:bg-red-800 w-[20rem] md:w-[26rem] mdx:w-[45vw] xl:h-full 
-          pl-[1rem] xl:pl-[8rem] xl:pt-[20rem] xl:pb-[4rem]
+          pl-[1rem] xl:pl-[8rem] xl:py-[2rem]
       "
         >
           <a
             href="https://www.codigocertocoders.com.br/"
-            className="xl:opacity-0 xl:animate-slide-in-from-left hidden absolute top-[3rem] xl:flex p-1 bg-white/60 rounded-lg"
+            className="xl:opacity-0 xl:animate-slide-in-from-left hidden top-[3rem] xl:flex p-1 bg-white/60 rounded-lg"
           >
             <img className="w-24" src="/logo-coders.webp" alt="coders" />
           </a>
-          <h1 className="leading-[1] text-clamp2 text-black font-bold xl:text-6xl">
+          <h1 className="leading-[1] text-clamp2 text-black font-bold xl:text-6xl h-[252px]">
             Hi, I&apos;m
             <br />
             <span
